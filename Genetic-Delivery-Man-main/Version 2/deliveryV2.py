@@ -78,6 +78,12 @@ class TimeOnWay:
             self._times[idx1][idx2] = time
             self._times[idx2][idx1] = time
         return self._times[idx1][idx2]
+    '''
+    It checks if the value stored in self._times[idx1][idx2] is less than 0.
+    If the condition is met, it calculates the time based on the distance between id1 and id2 (presumably from some kind of map) divided by the speed.
+    It assigns this calculated time to both self._times[idx1][idx2] and self._times[idx2][idx1].
+    Finally, it returns the value stored in self._times[idx1][idx2].
+    '''
 
 
 class Route:
