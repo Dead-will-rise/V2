@@ -51,6 +51,10 @@ class Population:
 
     def __setitem__(self, idx: int, item: Item) -> None:
         self.items[idx] = item
+    '''
+    These methods are used to get and set items in the items attribute of the class. items seems to be a list-like attribute containing objects of type Item.
+    These methods enable a more intuitive way of accessing and modifying items in the items list by using square bracket notation.
+    '''
 
     @property
     def best(self) -> tuple[int, Item]:
