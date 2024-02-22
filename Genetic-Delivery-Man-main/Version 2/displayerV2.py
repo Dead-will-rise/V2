@@ -22,6 +22,12 @@ class Displayer:
         self._show_city_id: bool = show_city_id
         self._font: pygame.font = pygame.font.SysFont("comicsansms", 15)
         self._window: pygame.Surface = pygame.display.set_mode((width + self._MARGIN * 2, height + self._MARGIN * 2))
+        '''
+        map: Map is an attribute initialized with the map parameter. map is expected to be an instance of the Map class.
+        width, height, fps, and show_city_id parameters are used to initialize respective attributes of the class.
+        self._clock is initialized with an instance of pygame.time.Clock(). This is likely to be used for controlling the frame rate of the application.
+        self._font is initialized with a font obtained from pygame.font.SysFont. This font is likely to be used for rendering text on the screen.
+        '''
 
     def update(self, route: Route) -> None:
         self._window.fill(self._WHITE)
